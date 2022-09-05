@@ -90,24 +90,6 @@ export const RegisterForm = styled.form`
     color: var(--color-grey-0);
   }
 
-  input {
-    width: 90%;
-    height: 2.8rem;
-    min-height: 1.5rem;
-    padding-left: 1rem;
-
-    background-color: var(--color-grey-2);
-    border: 1.2182px solid #343b41;
-    border-radius: 4px;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.625rem;
-  }
-  span {
-  }
-
   button {
     width: 90%;
     height: 2.8rem;

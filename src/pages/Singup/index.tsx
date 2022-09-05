@@ -27,7 +27,10 @@ const Singup = () => {
       .string()
       .oneOf([yup.ref("password")], "A senha não está igual a digitada"),
     bio: yup.string().required("Bio obrigatória"),
-    contact: yup.string().required("Contato obrigatório"),
+    contact: yup
+      .string()
+      .required("Contato obrigatório")
+      .matches(/^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/),
     course_module: yup.string().required("Módulo obrigatório"),
   });
   const {

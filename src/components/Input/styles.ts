@@ -15,11 +15,18 @@ export const Container = styled.div`
     background-color: var(--color-grey-2);
     border: 1.2182px solid #343b41;
     border-radius: 4px;
+    color: var(--color-grey-0);
 
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.625rem;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
   svg {
     position: absolute;
