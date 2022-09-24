@@ -30,7 +30,10 @@ const Singup = () => {
     contact: yup
       .string()
       .required("Contato obrigatório")
-      .matches(/^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/),
+      .matches(
+        /(^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*_-])).{8,}$/,
+        "Telefone inválido."
+      ),
     course_module: yup.string().required("Módulo obrigatório"),
   });
   const {
